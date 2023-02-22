@@ -1,0 +1,18 @@
+/*
+-----------------------------------------------------
+TopPage CSS
+FileName:   bgimgentrance.css
+Version:    2005.04/08
+Produced by Atsushi Sato NIT
+-----------------------------------------------------
+*/
+
+body {
+	background:url("../img/back/mt05s.jpg") no-repeat top center scroll;
+	width:760px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:163px;
+	font-size: 10pt;
+}
+

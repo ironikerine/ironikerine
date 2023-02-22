@@ -1,0 +1,102 @@
+\documentclass[serif,9pt]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[TS1,T1]{fontenc}
+\usepackage{array, booktabs}
+\usepackage{multirow}
+\usepackage[flushleft]{threeparttable}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{bookman}
+\usepackage{mathtools}
+\usepackage{kotex}
+\usepackage{adjustbox} % for \adjincludegraphics
+\usepackage{textcomp}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{subfiles}
+
+\newcommand\ytl[2]{\parbox[b]{8em}{\hfill{\color{cyan}\bfseries\sffamily #1}~$\cdot$~}\makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{4.5cm}{\vspace{7pt}\color{red!40!black!80}\raggedright\sffamily #2.\\[7pt]}\\[-3pt]}
+
+%\usefonttheme{professionalfonts}
+ 
+\usetheme{metropolis}
+\metroset{block=fill}
+
+\setbeamertemplate{caption}[numbered]{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+%\setbeameroption{show notes}
+
+\graphicspath{{images/}}
+
+\title{가새 및 링크보요소 모델링 방법}
+
+\setbeamertemplate{footline}[text line]{%
+  \parbox{\linewidth}{\vspace*{-8pt}\small 2022년 한국강구조학회 학술발표대회, 제주\hfill\hfill\insertpagenumber}}
+  
+\setbeamertemplate{navigation symbols}{}
+
+\subtitle{\small{Modeling Techniques for Braces}}
+
+\author{김대경\inst{1}, 김성용\inst{2}, 이철호\inst{3}, 충남대\inst{4}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[CWNU] % (optional, but mostly needed)
+{
+	\inst{1}%
+	조교수, 울산대학교 건축학부 \and
+	\inst{2}%
+	조교수, 창원대학교 건축공학과 \and
+	\inst{3}%
+	교수, 서울대학교 건축학과 \and
+	\inst{4}
+	교수, 충남대학교 건축학과
+}
+	
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{2022/6/10}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{conference_KSSC}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+\section{3.5 가새}	
+\subfile{bucklingbrace}
+	
+\section{3.6 좌굴방지가새}
+\subfile{brb}
+
+\section{3.7 링크보요소}
+\subfile{linkbeam}
+
+	\begin{frame}
+		경청해 주셔서 감사합니다. 
+	\end{frame}
+\end{document}
